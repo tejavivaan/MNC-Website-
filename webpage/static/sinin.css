@@ -1,0 +1,44 @@
+.curr{
+width : 400px;
+height : 300px;
+background-color: white;
+margin : 200px 0px 0px 500px;
+border-radius: 20px;
+text-align:center;
+}
+
+body{
+background-size: cover;
+background-repeat: no repeat;
+background-attachment: fixed;
+}
+
+h1{
+text-align:center;
+color:#000066;
+}
+
+button{
+background-color: #000066;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  align-item:center;
+
+}
+
+button:hover{
+opacity:1;
+}
+
+input{
+width:85%;
+padding:5px;
+margin: 5px 0 10px 0;
+display:inline-block;
+text-align:center;
+}

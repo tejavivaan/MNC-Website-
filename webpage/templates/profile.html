@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block body_block %}
+<body class="ab" style="background-image: url('{% static 'images/pexels-sora-shimazaki-5926398.jpg' %}');" >
+<link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}">
+<div class="header">
+    <h1> User Profile </h1>
+</div><br><br><br>
+<div class="block1" style="background-color:white;
+width : 500px;
+height : 200px;
+margin : 10px 10px 100px 500px;
+border-radius: 20px;
+text-align:center;
+color:black;
+" >
+    <br>
+{% if user.is_authenticated %}
+    <p> Username: {{ user }}</p>
+    <p>First Name: {{ user.first_name }}</p>
+    <p>Last Name: {{ user.last_name }} </p>
+    <p>Email: {{ user.email }}</p>
+    {% endif %}
+</div>
+<div class="footer">
+    <h2>© 2023 ELSer. All rights reserved. <br>
+        | Privacy Policy | Terms of Use | Sitemap</h2>
+</div>
+
+</body>
+{% endblock %}
+</html>

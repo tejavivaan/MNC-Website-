@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'sinin.css' %}">
+</head>
+<body id="bg" style="background-image: url('{% static 'images/pexels-fauxels-3182773.jpg' %}');" >
+<div class="curr">
+    <h1>LOGIN</h1>
+    <div class="mmm">
+        <form action="/sinin/" method="post">
+            {% csrf_token %}
+            <label for="">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your username" Required>
+            <br>
+            <label for="">Password</label>
+            <input type="password" id="pass1" name="pass1" placeholder="Enter Your First Password" Required>
+            <br>
+            <button type="submit">LOGIN</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
